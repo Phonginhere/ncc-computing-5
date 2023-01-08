@@ -16,8 +16,25 @@ h6 {
 
 .container {
   position: relative;
+  /* padding: 0.01em 16px;
+  padding-top: 0.01em;
+  padding-right: 16px;
+  padding-bottom: 0.01em;
+  padding-left: 16px; */
   /* font-size: 40px; */
 }
+
+.twothird{
+  margin-left: 470px;
+  width: 175%;
+}
+
+/* @media screen and (min-width: 601px) {
+  .twothird{
+    width: 65%;
+  }
+} */
+
 
 .bottom-left {
   position: absolute;
