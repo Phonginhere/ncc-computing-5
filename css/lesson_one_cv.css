@@ -79,11 +79,19 @@ i {
    clear:both;
    padding:6px 0 0 0;
    text-align:center;
-   bottom:0;
+   bottom:-50px;
    background-color: #009688!important;
    color:white;
    position:relative;
    height:100%;
    margin:-31% auto auto auto;
    z-index:31;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+h5 {
+  font-size: 18px;
 }
