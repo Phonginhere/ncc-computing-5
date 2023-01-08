@@ -70,6 +70,7 @@ i {
 
 .footer
  {
+  top: 20px;
    width:100%;
    clear:both;
    padding:6px 0 0 0;
