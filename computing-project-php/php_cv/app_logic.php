@@ -45,12 +45,12 @@ if (isset($_POST['reset-password'])) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = "eprojectaptech20@gmail.com";
-    $mail->Password = "qhxpmeejilrvdtvs";
+    $mail->Username = "Enter email";
+    $mail->Password = "Enter Password token";
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
     
-    $mail->From = "eprojectaptech20@gmail.com";
+    $mail->From = "Enter email";
     $mail->FromName = "Team Project";
     
     $mail->addAddress("$email", "Hello User");
