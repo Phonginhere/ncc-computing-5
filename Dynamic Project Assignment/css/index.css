@@ -1,0 +1,35 @@
+.d-block {
+    filter: brightness(50%);
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+
+.centered_title {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.centered_desc {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+}
+.centered_button a{
+    padding: 10px 25px;
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    background-color: #4CA74C;
+    border-radius: 25px;
+    text-decoration: none;
+}
