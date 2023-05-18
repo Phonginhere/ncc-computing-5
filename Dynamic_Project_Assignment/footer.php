@@ -11,22 +11,19 @@
 
     <!-- Right -->
     <div>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://www.facebook.com/profile.php?id=100009794028593" class="me-4 link-secondary">
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://twitter.com/JoeyDrew14" class="me-4 link-secondary">
         <i class="fa fa-twitter"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fa fa-google"></i>
-      </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://www.instagram.com/classicsans1594/" class="me-4 link-secondary">
         <i class="fa fa-instagram"></i>
       </a>
       <a href="" class="me-4 link-secondary">
         <i class="fa fa-linkedin"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
+      <a href="https://github.com/Phonginhere" class="me-4 link-secondary">
         <i class="fa fa-github"></i>
       </a>
     </div>
@@ -43,11 +40,10 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary"></i>Company name
+            <i class="fas fa-gem me-3 text-secondary"></i>GWSC (Global Wild Swimming and Camping)
           </h6>
           <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+          Welcome to GWSC, the finest online resource for camping and wild swimming aficionados looking for exhilarating adventures outside of their local town. Our meticulously built and developed website is committed to giving you with extensive information about our beautiful sites and various pitch kinds, as well as simple booking alternatives.
           </p>
         </div>
         <!-- Grid column -->
@@ -59,16 +55,16 @@
             Products
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="https://e.vnexpress.net/news/places/5-secluded-camping-sites-near-hanoi-4601127.html" class="text-reset">Hanoi</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="https://vietnamteachingjobs.com/top-5-best-nature-attractions-in-danang/" class="text-reset">DaNang</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="https://vietreader.com/travel/50288-invite-each-other-to-check-in-the-most-beautiful-and-famous-camping-sites-in-vung-tau.html" class="text-reset">VungTau</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="https://www.tripadvisor.com/Attractions-g293925-Activities-c61-t220-Ho_Chi_Minh_City.html" class="text-reset">HoChiMinh</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -80,16 +76,16 @@
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="https://local-insider.com/post/essential-tips-for-camping-in-vietnam/61a32c2e99748eb364e6e5fb" class="text-reset">Pricing</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="./reviews.php" class="text-reset">Ratings</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Orders</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="./contact.php" class="text-reset">Help</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -98,12 +94,12 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fa fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p><i class="fa fa-home me-3 text-secondary"></i> Viet Nam, VN 2023, HaNoi</p>
           <p>
             <i class="fa fa-envelope me-3 text-secondary"></i>
             info@example.com
           </p>
-          <p><i class="fa fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fa fa-phone me-3 text-secondary"></i> + 386 134 656</p>
           <p><i class="fa fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
         </div>
         <!-- Grid column -->

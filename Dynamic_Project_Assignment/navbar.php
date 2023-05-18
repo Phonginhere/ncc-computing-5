@@ -5,22 +5,19 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="./">Hidden brand</a>
+                <a class="navbar-brand" href="./">GWSC</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Information</a>
+                        <a class="nav-link" href="./information.php">Information</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Availability</a>
+                        <a class="nav-link" href="./availability.php">Availability</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reviews</a>
+                        <a class="nav-link" href="./reviewspage.php">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.php">Contact</a>
