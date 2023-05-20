@@ -1,3 +1,6 @@
+<?php
+require_once 'connectionCounter.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -45,6 +48,9 @@ fetch("reviews.php?page_id=" + reviews_page_id).then(response => response.text()
 });
 </script>
 		</div>
+		<div class="w3-container">
+  <p>Number of Views: <?php echo $views; ?></p>
+  </div>
 		<?php
     include_once('./footer.php');
     ?>

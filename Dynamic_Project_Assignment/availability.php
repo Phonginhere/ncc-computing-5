@@ -1,3 +1,6 @@
+<?php
+require_once 'connectionCounter.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -205,6 +208,10 @@ $database = "shopdb";
     }
   </script>
 </div>
+
+<div class="w3-container">
+  <p>Number of Views: <?php echo $views; ?></p>
+  </div>
 <?php
     include_once('./footer.php');
     ?>

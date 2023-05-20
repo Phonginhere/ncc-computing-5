@@ -1,3 +1,33 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "shopdb";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Increment the number of views
+$sql = "UPDATE views_counter SET views = views + 1 WHERE id = 1";
+$conn->query($sql);
+
+// Retrieve the number of views
+$sql = "SELECT views FROM views_counter WHERE id = 1";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $views = $row["views"];
+} else {
+    $views = 0;
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +40,9 @@
     <link rel="stylesheet" href="./css/index.css">
 
 <body>
+
+  
+
     <?php include_once('./navbar.php'); ?>
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -75,18 +108,6 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
-
-    <!-- <div class="container-fluid mt-3">
-        <h3>67 wild camping, swimming, scenic nature sites</h3>
-        <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-    </div> -->
-    <!-- <div class="p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap 5 Page</h1>
-  <p>Resize this responsive page to see the effect!</p>
-</div> -->
-
-
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-4">
@@ -134,6 +155,9 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Disabled</a>
                     </li>
+                    <li class="nav-item">
+                    <p>Number of views: <?php echo $views; ?></p> 
+                    </li>
                 </ul>
                 <hr class="d-sm-none">
             </div>
@@ -142,24 +166,12 @@
                     <h2>Direction Map</h2>
                 </center>
                 <iframe src="https://www.google.com/maps/d/embed?mid=16xO6zIWvp8Ac0pMtdnmnkc6EYBu4xWk&ehbc=2E312F" width="100%" height="480"></iframe>
-                <!-- <h5>Title description, Dec 7, 2020</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p>
-
-                <h2 class="mt-5">TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2020</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text..</p>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco.</p> -->
+    
             </div>
         </div>
     </div>
-
+   
+    
     <?php
     include_once('./footer.php');
     ?>

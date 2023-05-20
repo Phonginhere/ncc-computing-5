@@ -1,3 +1,6 @@
+<?php
+require_once 'connectionCounter.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -112,6 +115,9 @@
 </section>
 <!--Section: Contact v.2-->
 </div>
+<div class="w3-container">
+  <p>Number of Views: <?php echo $views; ?></p>
+  </div>
    
 
     <?php

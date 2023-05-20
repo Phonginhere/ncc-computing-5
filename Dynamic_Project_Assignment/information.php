@@ -1,3 +1,6 @@
+<?php
+require_once 'connectionCounter.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,24 +126,13 @@ Our goal is to empower individuals to embark on exhilarating journeys, explore n
       <p><button class="w3-button w3-light-grey w3-block"><a href="https://www.facebook.com/CaptainJackSparrow">Contact</a></button></p>
     </div>
   </div>
-
-  <!-- <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div> -->
   
 <div class="w3-container">
   <img src="./img/hehe.jpg" class="w3-image" style="width:20%">
 </div>
+<div class="w3-container">
+  <p>Number of Views: <?php echo $views; ?></p>
+  </div>
 </div>
 
 <?php
