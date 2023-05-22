@@ -1,61 +1,66 @@
 <?php
 require_once 'connectionCounter.php';
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Availability Page - Wild Camping, Swimming, Scenic Nature</title>
   <style>
     /* CSS styles */
     body {
       font-family: Arial, sans-serif;
+      color: white; /* Changed text color to white */
     }
 
     h1 {
       text-align: center;
+      margin-top: 20px;
+      color: #333;
     }
 
-    #availability-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
-      justify-items: center;
+    .site-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
     }
 
     .site {
-      background-color: #f3f3f3;
+      width: 300px;
+      margin: 10px;
       padding: 20px;
+      background-color: #777; /* Changed background color to grey */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       text-align: center;
-    }
-
-    .site h2 {
-      margin-bottom: 10px;
-    }
-
-    .site p {
-      margin: 0;
+      color: white; /* Changed text color to white */
     }
 
     .site img {
-      max-width: 200px;
+      max-width: 100%;
       height: auto;
       margin-bottom: 10px;
     }
 
-    .site .description {
+    .site h2 {
       margin-bottom: 10px;
+      color: #333;
+    }
+
+    .site p {
+      margin: 0;
+      color: white;
     }
 
     .site .availability {
+      margin-top: 10px;
       font-weight: bold;
+      color: #4CAF50;
     }
 
     .site .booking-button {
       margin-top: 10px;
-      background-color: #4CAF50;
+      background-color: red;
       color: white;
       padding: 8px 16px;
       border: none;
@@ -67,6 +72,7 @@ require_once 'connectionCounter.php';
       background-color: #ccc;
       cursor: not-allowed;
     }
+
     /* Pagination styles */
     .pagination {
       display: flex;
@@ -89,29 +95,18 @@ require_once 'connectionCounter.php';
   </style>
 </head>
 <body>
-<?php include_once('./navbar.php');?>
+  <?php include_once('./navbar.php'); ?>
 
-</div>
-</div>
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="./img/BRARCHITECH.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"></span> <span class="w3-hide-small w3-text-light-grey">Available Camping and Swimming Sites in Vietnam</span></h1>
-  </div>
-</header>
+  <h1>Available Camping and Swimming Sites in Vietnam</h1>
 
-
-<div class="w3-content w3-padding" style="max-width:1564px">
-
-  <div id="availability-container">
+  <div class="site-container">
     <?php
     // PHP code
     // Database connection configuration
     $servername = "localhost";
-$username = "root";
-$password = "";
-$database = "shopdb";
-
+    $username = "root";
+    $password = "";
+    $database = "shopdb";
 
     // Create a connection
     $conn = new mysqli($servername, $username, $password, $database);
@@ -122,7 +117,7 @@ $database = "shopdb";
     }
 
     // Pagination configuration
-    $resultsPerPage = 9; // Maximum number of products per page
+    $resultsPerPage = 12; // Maximum number of products per page
     $currentPage = isset($_GET['page']) ? $_GET['page'] : 1; // Get the current page from the URL query parameter
     $offset = ($currentPage - 1) * $resultsPerPage; // Calculate the offset
 
@@ -137,7 +132,8 @@ $database = "shopdb";
                 <img src='" . $row["image"] . "' alt='" . $row["name"] . "'>
                 <h2>" . $row["name"] . "</h2>
                 <p><strong>Location:</strong> " . $row["location"] . "</p>
-                <p class='description'>" . $row["description"] . "</p>
+                <p><strong>Description:</strong></p>
+                <p>" . $row["description"] . "</p>
                 <p><strong>Availability:</strong> <span class='availability'>" . $row["availability"] . "</span></p>
                 <button class='booking-button' onclick='handleBookingClick(this)' data-id='" . $row["id"] . "'>Book Now</button>
               </div>";
@@ -207,13 +203,7 @@ $database = "shopdb";
       }
     }
   </script>
-</div>
 
-<div class="w3-container">
-  <p>Number of Views: <?php echo $views; ?></p>
-  </div>
-<?php
-    include_once('./footer.php');
-    ?>
+  <?php include_once('./footer.php'); ?>
 </body>
 </html>

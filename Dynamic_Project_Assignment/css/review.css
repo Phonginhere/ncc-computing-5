@@ -1,78 +1,103 @@
-.reviews .overall_rating .num {
-    font-size: 30px;
-    font-weight: bold;
-    color: #F5A624;
+/* Custom CSS styles for reviews section */
+
+.overall-rating {
+  text-align: center;
+  margin-bottom: 20px;
 }
-.reviews .overall_rating .stars {
-    letter-spacing: 3px;
-    font-size: 32px;
-    color: #F5A624;
-    padding: 0 5px 0 10px;
+
+.num {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff6f00;
 }
-.reviews .overall_rating .total {
-    color: #777777;
-    font-size: 14px;
+
+.thumbs-up {
+  font-size: 40px;
+  color: #ff6f00;
 }
-.reviews .write_review_btn, .reviews .write_review button {
-    display: inline-block;
-    background-color: #565656;
-    color: #fff;
-    text-decoration: none;
-    margin: 10px 0 0 0;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 600;
-    border: 0;
+
+.total {
+  font-size: 16px;
+  color: #777;
 }
-.reviews .write_review_btn:hover, .reviews .write_review button:hover {
-    background-color: #636363;
+
+.write-review-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
-.reviews .write_review {
-    display: none;
-    padding: 20px 0 10px 0;
+
+.write-review-form-container {
+  display: none;
+  margin-bottom: 20px;
 }
-.reviews .write_review textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    height: 150px;
-    margin-top: 10px;
+
+.write-review-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.reviews .write_review input {
-    display: block;
-    width: 250px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 10px;
+
+.write-review-form-container input,
+.write-review-form-container textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
-.reviews .write_review button {
-    cursor: pointer;
+
+.write-review-form-container textarea {
+  height: 100px;
 }
-.reviews .review {
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+
+.write-review-form-container input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.reviews .review .name {
-    padding: 0 0 3px 0;
-    margin: 0;
-    font-size: 18px;
-    color: #555555;
+
+.reviews-list {
+  margin-top: 20px;
 }
-.reviews .review .rating {
-    letter-spacing: 2px;
-    font-size: 22px;
-    color: #F5A624;
+
+.review-item {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
-.reviews .review .date {
-    color: #777777;
-    font-size: 14px;
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
-.reviews .review .content {
-    padding: 5px 0;
+
+.name {
+  font-weight: bold;
 }
-.reviews .review:last-child {
-    border-bottom: 0;
+
+.rating {
+  color: #ff6f00;
+}
+
+.review-content {
+  margin-bottom: 5px;
+}
+
+.submit-date {
+  font-size: 12px;
+  color: #777;
 }

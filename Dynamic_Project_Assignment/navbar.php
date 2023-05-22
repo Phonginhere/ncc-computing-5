@@ -1,38 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a >GWSC</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./information.php">Information</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./availability.php">Availability</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reviewspage.php">Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.php">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.php">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./register.php">Register</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+<link rel="stylesheet" href="./css/Navbarfooter.css">
+<script src="./js/navbar.js" > </script>
+<header id="navbar">
+  <nav class="navbar-container container">
+    <a href="/" class="home-link">
+      <div class="navbar-logo"></div>
+      GWSC
+    </a>
+    <button type="button" class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div id="navbar-menu" class="detached">
+      <ul class="navbar-links">
+        <li class="navbar-item"><a class="navbar-link active" href="./index.php">Home</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./information.php">Information</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./availability.php">Availability</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./reviewspage.php">Reviews</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./contact.php">Contact</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./login.php">Login</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="./register.php">Register</a></li>
+      </ul>
 
-            </div>
-    </nav>
+    </div>
+  </nav>
+</header>
