@@ -1,0 +1,258 @@
+/* Navbar Styles */
+/* Add your existing CSS rules */
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-link {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        align-self: flex-end;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.opened {
+        display: block;
+    }
+
+    .navbar-links li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-link {
+        margin-right: 20px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin-left: 20px;
+    }
+}
+
+
+
+/* Footer Styles */
+/* You can add your custom styles here */
+footer {
+    background-color: #000000;
+    /* Set the desired background color */
+    /* Other styles for the footer */
+}
+
+a.text-reset {
+    color: white;
+}
+
+footer.text-center.text-lg-start.text-muted {
+    color: white;
+}
+
+.text-reset {
+    color: black;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg-start {
+    text-align: left;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-lg-between {
+    justify-content: space-between;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.me-5 {
+    margin-right: 1.25rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-lg-block {
+    display: block;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
+
+.fa-gem:before {
+    content: "\f3a5";
+}
+
+.fa-home:before {
+    content: "\f015";
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fa-print:before {
+    content: "\f02f";
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3,
+.col-md-2,
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-md-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.col-lg-4,
+.col-lg-2,
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-md-0 {
+    margin-bottom: 0;
+}
